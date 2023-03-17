@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    function add7(number) {
+      return number + 7;
+    }
+
+    function multiply(first, second) {
+      return first * second;
+    }
+
+    function capitalize(word) {
+      let lowerCase = word.toLowerCase();
+      let camelCase = lowerCase.substring(0,1).toUpperCase()
+          + lowerCase.substring(1,lowerCase.length);
+      return camelCase;
+    }
+    /*
+    alert(capitalize("word"));
+    alert(capitalize("WORD"));
+    alert(capitalize("wORD"));
+    alert(capitalize("Word"));
+    */
+
+    function lastLetter(word) {
+      return word.charAt(word.length-1);
+    }
+    /*
+    alert(lastLetter("word"));
+    */
+  </script>
+</body>
+</html>
